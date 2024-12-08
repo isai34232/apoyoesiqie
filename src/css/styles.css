@@ -1,0 +1,254 @@
+
+.Contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.webp body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/F.png");
+}
+
+.no-webp body{
+    background-image: url("../img/fondo2.jpg");
+}
+
+.loginContenido {
+    background: #501430;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+    color: white;
+}
+
+.loginContenido h1 {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 1px black;
+}
+
+.loginContenido form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContenido input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.loginContenido button {
+    background: #F9D9AC;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loginContenido button:hover {
+    background: #acf9f2;
+}
+
+.loginContenido a {
+    color: #fcfcec;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.loginContenido a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+
+
+.Conten_bajo {
+    background: #501430; /* Fondo ligeramente más claro */
+    padding: 15px; /* Espacio interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: absolute; /* Fija el div en la parte inferior */
+    bottom: 10px; /* Posición en la parte inferior */
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.Conten_bajo p {
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+    margin: 0; /* Elimina el margen */
+    font-style:italic;
+    color: #fcfcec;
+}
+
+.Conten_bajo a{
+    font-size: 20px;
+    font-style:oblique;
+    color: #fcfcec;
+    text-shadow: 0 0 8px black;
+    text-decoration: none;
+   
+}
+
+.Conten_bajo a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+    text-shadow: 0 0 8px rgb(56, 131, 230);
+}
+
+
+/* Para pantallas pequeñas */
+@media (max-width: 576px) {
+    .loginContenido {
+      max-width: 85%;
+        bottom: 10px;
+        padding: 20px;
+        gap: 50px; /* Espacio entre los divs */
+        margin-top:0px;
+       
+    }
+
+    .loginContenido h1 {
+        font-size: 35px;
+        margin-bottom: 60px;
+    }
+
+    .loginContenido a {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .Conten_bajo {
+        max-width: 90%; 
+        bottom: 10px;
+        padding: 10px;
+        gap: 20px; /* Espacio entre los divs */
+        position: fixed;
+    }
+
+    .Conten_bajo p {
+        font-size: 20px;
+        
+    }
+
+    .Conten_bajo a {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Para pantallas medianas */
+@media (min-width: 577px) and (max-width: 768px) {
+    .Conten_bajo {
+        max-width: 60%;
+        bottom: 10px;
+        padding: 20px;
+        gap: 50px; /* Espacio entre los divs */
+        
+    }
+
+    .Conten_bajo p {
+        font-size: 15px;
+    }
+
+    .Conten_bajo a {
+        font-size: 19px;
+    }
+    .loginContenido{
+        max-width: 65%;
+        bottom: 10px;
+        padding: 20px;
+        gap: 50px; /* Espacio entre los divs */
+        margin-top:0px;
+       
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 769px) {
+    .Conten_bajo {
+        max-width: 23%;
+        bottom: 40px;
+        padding: 15px;
+    }
+
+    .Conten_bajo p {
+        font-size: 16px;
+    }
+
+    .Conten_bajo a {
+        font-size: 20px;
+    }
+}
+
+.alert-danger{
+    background-color: #f8d7da;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    -webkit-border-radius: 40px 40px 40px 40px;
+    border: 0px solid #000000;
+}
+
+.botonPrincipal{
+    text-decoration: none;
+    background: #F9D9AC;
+    border: none;
+    padding: 15px 80px; /* tamaño del boton */
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px; 
+    display: inline-block; 
+    margin-right: 15px; /* Espacio entre los botones */
+}
+.botonPrincipal:hover{
+    background-color: #007bff38;
+    color: #fff;
+}
+.gracias{
+    background: #BAD3C6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}
+.gracias__idC{
+    background-color: #fdd385;
+    padding: 2rem;
+}
+.gracias__id{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.gracias__id ion-icon {
+    font-size: 5rem;
+}

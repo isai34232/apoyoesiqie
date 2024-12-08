@@ -1,0 +1,222 @@
+.Contenido_Recuperacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/fondo2.webp");
+}
+
+
+
+
+.no-webp body{
+    background-image: url("../img/fondo2.jpg");
+}
+
+.Recueperacion {
+    background: #BAD3C6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.Recueperacion h1 {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 1px black;
+}
+.Recueperacion p{
+    margin-bottom: 40px;
+}
+
+.Recueperacion form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Recueperacion input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+}
+
+.Recueperacion button {
+    background: #F9D9AC;
+    border: none;
+    padding: 15px 10px; /* tamaño del boton */
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px; 
+    display: inline-block; 
+    margin-right: 15px; /* Espacio entre los botones */
+   
+}
+
+.Recueperacion button:hover {
+    background: #acf9f2;
+}
+
+
+.botonesR {
+    text-align: center;
+    margin-top: 20px; /* Espacio arriba de los botones */
+    border: none;
+}
+    
+.text{
+    margin-bottom: 20px;
+}
+
+
+#userType {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    padding: 8px; /* Añade espacio interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #333; /* Color de texto */
+    appearance: none; /* Elimina el estilo por defecto del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none; /* Elimina el borde azul al hacer clic */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+   
+    
+}
+
+#userType option {
+    padding: 10px; /* Espaciado interno en las opciones */
+    background-color: #fff; /* Fondo blanco para las opciones */
+    color: #333; /* Color de texto de las opciones */
+}
+
+
+
+/* Para pantallas pequeñas */
+@media (max-width: 576px) {
+    .Recueperacion {
+        max-width: 90%;
+        bottom: 10px;
+        padding: 10px;
+    }
+
+    .Recueperacion p {
+        font-size: 20px;
+    }
+
+    .Recueperacion a {
+        font-size: 18px;
+    }
+    .Recueperacion button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+}
+
+/* Para pantallas medianas */
+@media (min-width: 577px) and (max-width: 768px) {
+    .Recueperacion {
+        max-width: 65%;
+        bottom: 30px;
+        padding: 12px;
+    }
+
+    .Recueperacion p {
+        font-size: 15px;
+    }
+
+    .Recueperacion a {
+        font-size: 19px;
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 769px) {
+    .Recueperacion {
+        max-width: 23%;
+        bottom: 40px;
+        padding: 15px;
+    }
+
+  
+
+    .Recueperacion a {
+        font-size: 20px;
+    }
+}
+
+/* Capa negra de fondo */
+#loading-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa negra semi-transparente */
+    z-index: 999;
+}
+
+/* Mantén el estilo existente de #loading */
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    background-color: rgba(255, 255, 255);
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px){
+    #loading{
+        width: 100%;
+    }
+}
+
+#loading p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilo de la animación de carga */
+.loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}

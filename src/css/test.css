@@ -1,0 +1,36 @@
+.pregunta{
+    display: flex;
+    border-top: 2px solid #000; /* 2px de grosor, línea sólida, color negro */
+}
+
+.opciones{
+    display: flex;
+    gap: 10rem;
+    padding-bottom: 1rem;
+}
+.opcion{
+    display: flex;
+    gap: 1rem;
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+    margin-top: 3rem;
+}
+.titulo_ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.titulo_ico__icono{
+    font-size: 4rem;
+    transition: color 1s ease; /* Suavizar el cambio de color */
+}
+
+/* Estilo cuando el h2 está en vista */
+.h2--highlight {
+    color: #007bff;
+}
+

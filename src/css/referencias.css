@@ -1,0 +1,55 @@
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #7b7066;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#ffffff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+ }
+
+
+
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+    margin-bottom: 2rem;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+ .centrar-texto{
+      text-align: center;
+ }
+ .campo__f{
+   width: 100%;
+   padding: 1rem 0;
+ }

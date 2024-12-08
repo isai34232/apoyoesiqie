@@ -1,0 +1,30 @@
+.pregunta-correcta {
+    background-color: #d4edda; /* Verde claro */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.pregunta-incorrecta {
+    background-color: #f8d7da; /* Rojo claro */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.pregunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.respuesta-correcta {
+    color: #721c24; /* Rojo oscuro */
+    font-weight: bold;
+}
+.iconoR{
+  font-size: 5rem;
+  flex: 2;
+}
+.pg{
+  flex: 8;
+  overflow: auto;
+}

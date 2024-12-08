@@ -1,0 +1,498 @@
+:root{
+    --fuenteMarca: 'January Threed', sans-serif;    
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #2e2e2e;
+    --primarioClaro: #70d2ff;
+    --secundario: #aedd28;
+    --secundarioOscuro: #759e12;
+    --section: #70d2ff;
+    --claro: #f8f8ec;
+    --blanco: #fff;
+    --negro: #000;
+    --grisClaro: #DFE9F3;
+}
+/**Globales**/
+
+body{
+    box-sizing: border-box; 
+    background-color: #f0f0f0;
+    font-family: var(--fuenteParrafos);
+    font-size: 1.5rem;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+}
+.contenedor {
+    width: min(90%, 120rem); /**Tomar el valor minimo entre los dos**/
+    margin: 0 auto; 
+  
+}
+.no-margin{
+    margin: 0 !important;
+ }
+ 
+/*Panel*/
+.bgbarra{
+    background-color: #bad3c6;
+    width: 100%;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo__nombre{
+    font-family: var(--fuenteMarca);
+    font-size: 2rem !important;
+}
+
+.entrada--active{
+    color: #007bff !important;
+}
+.icono{
+    color: #fff;
+    font-size: 1rem;
+}
+.boton--zoom{
+    position: fixed;
+    bottom: 20px; /* Ajusta según la posición deseada */
+    right: 20px; /* Ajusta según la posición deseada */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que el botón esté sobre otros elementos */
+}
+.iconoText{
+    display: flex;    
+    gap: 1rem;
+    align-items: center;
+}
+
+.material{
+    font-size: 4rem;
+}
+.waves{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+/*Perfil*/
+.perfil__titulo{
+    position: absolute;
+    font-family: var(--fuenteHeading);
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    z-index: 2;
+    top: 0;
+    left: 30%;
+}
+.perfil__datos{
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+@media (max-width: 768px){
+    .perfil__datos{
+        display: block;
+    }
+}
+.datos__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #bad3c6;
+    border-radius: 200px 200px 0px 200px;
+    -moz-border-radius: 200px 200px 0px 200px;
+    -webkit-border-radius: 200px 200px 0px 200px;
+    border: 3px solid #000000;
+}
+
+.datos__logo span{
+    font-size: 3rem;
+}
+
+.cambiarC{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 3rem;
+}
+
+.cambiarC__boton{
+    display: flex;
+    justify-content: end;
+}
+.formulario{
+    width: 90%;
+}
+.campo {
+    display: flex;
+    margin-bottom: 4rem;
+    height: 5rem;
+}
+@media (max-width: 480px){
+    .formulario{
+        padding-bottom: 5rem;
+    }
+}
+@media (max-width: 768px){
+    .campo{
+        flex-direction: column;
+    }
+    .campo label{
+        align-items: flex-start;
+    }
+    .campo__field{
+        padding-top: 1rem;
+    }
+    .datos__logo{
+        width: 3rem;
+        height: 3rem;
+    }
+    .datos__logo span{
+        font-size: 2rem;
+    }
+    .perfil__datos p{
+        font-size: 1rem;
+    }
+}
+  /* Estilo general para el botón */
+  .boton--zoom {
+    display: none; /* Ocultamos el botón por defecto */
+}
+
+/* Media query para resoluciones menores a 768px */
+@media (max-width: 768px) {
+    .boton--zoom {
+        display: inline-block; /* Mostramos el botón solo en pantallas pequeñas */
+    }
+}
+.campo__label {
+    padding-right:2rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.botonPrincipal{
+    background: #F9D9AC;
+    border: none;
+    padding: 15px 80px; /* tamaño del boton */
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px; 
+    display: inline-block; 
+    margin-right: 15px; /* Espacio entre los botones */
+}
+.botonPrincipal:hover{
+    background-color: #007bff38;
+}
+/*Radio Botones*/
+
+.radio-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .input-container {
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+    margin: 0.5rem;
+    text-align: center;
+  }
+  
+  .input-container input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .input-container .radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 2px solid var(--primario);
+    border-radius: 8px;
+    transition: all 300ms ease;
+  }
+  
+  .input-container ion-icon {
+    color: var(--primario);
+    font-size: 3rem;
+  }
+  
+  .input-container label {
+    color: var(--primario);
+    font-size: 0.80rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  input:checked+.radio-tile {
+    background-color: var(--primario);
+    box-shadow: 0 0 12px var(--primario);
+    transform: scale(1.1);
+  }
+  
+  input:hover+.radio-tile {
+    box-shadow: 0 0 12px var(--primario);
+  }
+  
+  input:checked+.radio-tile ion-icon,
+  input:checked+.radio-tile label {
+    color: white;
+  }
+
+  /*tabla*/
+
+
+.table {
+	background-color: whitesmoke;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    height: 100px; 
+}
+
+.row div {
+    overflow: auto;
+}
+
+.row .icono__tabla{
+    overflow: hidden;
+}
+
+.row .agregar{
+    overflow: hidden;
+}
+
+.row:hover {
+	background-color: #bad3c6;
+}
+
+.row:nth-child(even) {
+	background-color: #dfdfdf;
+}
+
+.row:nth-child(even):hover {
+	background-color: #bad3c6;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	background-color: #dfdfdf;
+}
+
+.header .row {
+	padding: 10px;
+	background-color: var(--primario);
+}
+
+.header .row div {
+	display: flex;
+	justify-content: center;
+	font-weight: 600;
+	color: white;
+}
+
+.body .row {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.body .row div {
+	display: flex;
+	justify-content: center;
+}
+
+.footer .row {
+	padding: 5px;
+	background-color: #2e2e2e;
+}
+
+.footer .row div {
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+.options {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.page-active {
+	color: crimson;
+}
+.agregar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agregar a{
+    font-size: 3rem;
+    color: #007bff;
+}
+.agregar a:hover{
+    font-size: 4rem;
+    color: #dfdfdf;
+}
+
+.test-general__titulo{
+    text-align: center;
+}
+.test-general__formulario{
+    margin-bottom: 3rem;
+}
+.icono__tabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icono__tabla a{
+    color: #007bff;
+    font-size: 3rem;
+}
+.icono__tabla a:hover{
+    color: #2e2e2e;
+    font-size: 4rem;
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.question{
+    background-color: #e9e9e9;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid #0a0261;
+    margin-bottom: 2rem;
+}
+
+.pregunta{
+    display: flex;
+}
+
+.question label{
+    background-color: #fff;
+    display: block;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.question p{
+    overflow: hidden;
+}
+/* Estilo cuando el label está seleccionado */
+.selected {
+    background-color: #bad3c6 !important;
+}
+
+
+.radiob {
+    width: 0; /* Ancho del círculo */
+    height: 0; /* Altura del círculo */
+    transform: scale(1.5); /* Escala para agrandar el círculo */
+    margin-right: 0.5rem; /* Espacio entre el círculo y el texto */
+}
+@media (max-width: 768px){
+    .estadisticas__titulo{
+        font-size: 1.2rem;
+        text-align: center;
+    }    
+
+
+}
+
+.tipo{
+    font-size: 4rem;
+}
+ 
+@media (max-width: 768px){
+    .row__material p{
+        font-size: 1rem;
+    }   
+}
+
+#btn-mas{
+    display: none;
+}
+.contenedor_b{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: #012348;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background: #fff;
+    color: #007bff;
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: #007bff;
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}
+    
+
