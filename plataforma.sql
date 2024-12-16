@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-12-2024 a las 17:05:34
+-- Tiempo de generación: 16-12-2024 a las 16:26:57
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -127,7 +127,27 @@ INSERT INTO `materiales_apoyo` (`id`, `nombre`, `contenido`, `tipo_material`, `i
 (2, 'Operaciones con polinomios: suma, resta, multiplicación y división', 'https://www.superprof.es/apuntes/escolar/matematicas/algebra/polinomios/suma-de-polinomios.html#:~:text=18%E2%82%AC-,Suma%20de%20polinomios,en%20los%20t%C3%A9rminos%20a%20sumar.', 'Página web', 2, 1),
 (3, 'Ejercicios de cálculo de derivadas', 'https://www.matematicasonline.es/pdf/ejercicios/1%C2%BABach%20Cienc/Ejercicios%20de%20derivadas2.pdf', 'Documento', 5, 1),
 (4, 'Circunferencia ', '<p>La circunferencia (o círculo) se representa en un sistema de coordenadas cartesianas mediante una ecuación cuadrática. La ecuación estándar de una circunferencia con centro en (h,k) y radio r es:</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle mathsize=\"26px\"><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mi>h</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>−</mo><mi>k</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mstyle></math></p><p>Donde:</p><ul><li>(h,k) es el centro de la circunferencia.</li><li>r es el radio de la circunferencia.</li></ul>', 'Texto', 4, 1),
-(26, 'Derivadas parciales', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/XKgfHOaXhqs?si=OJqlVQE3gMGsb4X_\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 5, 1);
+(26, 'Derivadas parciales', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/XKgfHOaXhqs?si=OJqlVQE3gMGsb4X_\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 5, 1),
+(27, 'Integrales definidas', 'https://www.superprof.es/apuntes/escolar/matematicas/calculo/integrales/ejercicios-resueltos-de-integrales-definidas.html', 'Página web', 6, 1),
+(28, 'Integrales indefinidas', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Mi15VnhENr0?si=MKXPCRbMri_EYvBu\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 6, 1),
+(29, 'Límites: Reglas y Resolución de Indeterminaciones', 'https://www.problemasyecuaciones.com/limites/calculo-limites-explicados-metodos-reglas-procedimientos-indeterminaciones-grados-infinito-resueltos.html', 'Página web', 5, 1),
+(30, 'Regla de la cadena', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QyS3P7txclA?si=O2ZF5sDFhv-JYfuW\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 5, 1),
+(32, 'Integrales impropias', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZLncfIgnqTE?si=qR0iKUX0M_nUHLtm\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 6, 1),
+(33, 'Derivadas logaritmicas', 'https://www.derivadas.es/derivadas-funciones-logaritmicas/', 'Página web', 5, 1),
+(34, 'Área entre curvas', 'https://belver.clavijero.edu.mx/cursos/nme/semestre6/calcint/s4/contenidos/rea_entre_curvas.html', 'Página web', 6, 1),
+(35, 'Velocidad', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qJOdLbMi5hU?si=-NPZG8Hqyx19tRLw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 8, 2),
+(36, 'Aceleración', 'https://uapas2.bunam.unam.mx/matematicas/aceleracion', 'Página web', 8, 2),
+(37, 'Ley de Lorentz', 'https://www.ingenierizando.com/electronica/ley-de-lorentz/', 'Página web', 16, 2),
+(38, 'Ley de Ohm', 'https://www.lifeder.com/ley-de-ohm/', 'Página web', 18, 2),
+(39, 'Caída libre', '<p>En la <strong>caída libre</strong> un objeto cae verticalmente desde cierta <i>altura H</i> despreciando cualquier tipo de rozamiento con el aire o cualquier otro obstáculo. Se trata de un&nbsp;movimiento rectilíneo uniformemente acelerado (m.r.u.a.) en el que <i>la aceleración coincide con el valor de la gravedad</i>. En la superficie de la Tierra, la aceleración de la gravedad se puede considerar constante, dirigida hacia abajo,&nbsp;se designa por la letra&nbsp;<i>g&nbsp;</i>y su valor es de&nbsp;9\'8m/s2 (a veces se aproxima por 10 m/s2).</p><p>La <strong>caída libre</strong> es un movimiento rectilíneo uniformemente acelerado (m.r.u.a.) o movimiento rectilíneo uniformemente variado (m.r.u.v.) en el que se deja caer un cuerpo verticalmente desde cierta altura y <i>no encuentra resistencia&nbsp;alguna en su camino</i>. Las <strong>ecuaciones de la caída libre</strong> son:</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mi>H</mi><mo>&nbsp;</mo><mo>-</mo><mo>&nbsp;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup><mspace linebreak=\"newline\">&nbsp;</mspace><mi>v</mi><mo>=</mo><mi>a</mi><mi>t</mi><mspace linebreak=\"newline\">&nbsp;</mspace><mi>a</mi><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mo>-</mo><mi>g</mi></math><br>&nbsp;</p><p>Donde:</p><ul><li><i>y</i>: La<i><strong> posición&nbsp;final</strong></i> del cuerpo. Su unidad en el Sistema Internacional (S.I.) es el metro (m)</li><li><i>v</i>: La<i><strong> velocidad final</strong></i> del cuerpo.&nbsp;Su unidad en el Sistema Internacional (S.I.) es el metro &nbsp;(m/s)</li><li><i>a</i>: La <strong>aceleración</strong> del cuerpo durante el movimiento. Su unidad en el Sistema Internacional (S.I.) es el metro por segundo al cuadrado(m/s2).</li><li><i>t</i>: Intervalo de<i><strong> tiempo</strong></i> durante el cual se produce el movimiento.&nbsp;Su unidad en el Sistema Internacional (S.I.) es el segundo (s)</li><li><i>H</i>: La <i><strong>altura</strong></i> desde la que se deja caer el cuerpo. Se trata de una medida de <i>longitud</i> y por tanto se mide en metros.</li><li><i>g</i>: El valor de la <i><strong>aceleración de la gravedad</strong></i> que, <i>en la superficie terrestre</i> puede considerarse igual a 9.8 m/s2</li></ul>', 'Texto', 8, 2),
+(40, 'Características de las ondas', '<p>Las ondas cuentan con cuatro propiedades básicas que nos ayudan a describir su comportamiento.</p><ul><li>1. La <strong>Amplitud (A)</strong> representa la altura máxima de la onda desde su posición de equilibrio. En ondas transversales, como las ondas en una cuerda, es la distancia desde la posición de equilibrio hasta el punto más alto o más bajo de la onda.</li><li>2. La <strong>longitud de onda (</strong><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>λ</mi></math><strong>)</strong> es la distancia entre dos puntos consecutivos en una onda que están en la misma fase. En ondas electromagnéticas, como la luz, esto se relaciona con el color; en ondas sonoras, está vinculado al tono.</li><li>3. La <strong>Frecuencia (f)</strong> indica cuántas oscilaciones ocurren en una unidad de tiempo. La frecuencia está inversamente relacionada con el período T que es el tiempo necesario para que una onda complete un ciclo. La relación es&nbsp;</li></ul><figure class=\"image\"><img src=\"https://cdn-blog.superprof.com/blog_all/wp-content/uploads/latex/b896ab0e7861d76b2885be93cf5154ea150b1fa6.png\"></figure><ul><li>4. La <strong>velocidad de propagación (v)</strong> es la velocidad a la que la onda se desplaza a través de un medio. En el vacío, la velocidad de las ondas electromagnéticas es la velocidad de la luz.</li></ul><p>&nbsp;</p><p><strong>Tipos de ondas</strong></p><ol><li>Las <strong>ondas mecánicas</strong> tienen 2 categorías: <strong>transversales</strong>, que se caracterizan por la manera en que las partículas vibran perpendicularmente a la dirección de la propagación de la onda. El otro tipo de onda mecánica son <strong>longitudinales</strong>, que producen vibraciones en la misma dirección de la onda.</li><li>&nbsp;Las <strong>ondas electromagnéticas</strong> resultan de la combinación de campos eléctricos y magnéticos. Se caracterizan por propagarse sin necesidad de un medio, con una velocidad de propagación igual a la velocidad de la luz. Ejemplos incluyen la luz, microondas y radiofrecuencias.</li></ol>', 'Texto', 20, 2),
+(41, 'Ejercicios de acústica', 'https://www.superprof.es/apuntes/escolar/fisica/vibraciones-ondas/ejercicios-resueltos-de-ondas-sonoras.html', 'Página web', 20, 2),
+(42, 'Ley de Gauss p.1', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3aWFJdqM_Rw?si=2ELtjuMARNb9JftA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 16, 2),
+(43, 'Ley de Gauss p.2 Ejercicio', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sSfs2xeNWxs?si=V0d2gVLsEBgSIbmR\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 16, 2),
+(44, 'Ley de Gauss p.3 Ejercicio', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/XHAfc4EbH1Q?si=Dj9chgd07nHjWKzj\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>', 'Video', 16, 2),
+(45, 'Potencial electrico', 'https://www.ingenierizando.com/electronica/potencial-electrico/', 'Página web', 19, 2),
+(46, 'Ley de Lenz', 'https://www.electricity-magnetism.org/es/ley-de-lenz-concepto-y-aplicaciones/', 'Página web', 16, 2),
+(47, 'Integrales trignometricas', 'https://www.zweigmedia.com/MundoReal/trig/trig4.html', 'Página web', 6, 1);
 
 -- --------------------------------------------------------
 
@@ -280,7 +300,12 @@ INSERT INTO `temas` (`id_tema`, `nombre`, `id_materia`) VALUES
 (4, 'Geometría Analítica', 1),
 (5, 'Cálculo Diferencial', 1),
 (6, 'Cálculo Integral', 1),
-(7, 'Probabilidad y Estadística', 1);
+(7, 'Probabilidad y Estadística', 1),
+(8, 'Cinematica', 2),
+(16, 'Campo Eléctrico', 2),
+(18, 'Ley de Ohm', 2),
+(19, 'Potencial Eléctrico', 2),
+(20, 'Acústica', 2);
 
 --
 -- Índices para tablas volcadas
@@ -354,7 +379,7 @@ ALTER TABLE `grupos`
 -- AUTO_INCREMENT de la tabla `materiales_apoyo`
 --
 ALTER TABLE `materiales_apoyo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT de la tabla `materias`
@@ -378,7 +403,7 @@ ALTER TABLE `resultados`
 -- AUTO_INCREMENT de la tabla `temas`
 --
 ALTER TABLE `temas`
-  MODIFY `id_tema` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_tema` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Restricciones para tablas volcadas

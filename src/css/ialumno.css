@@ -19,7 +19,7 @@ body{
     box-sizing: border-box; 
     background-color: #f0f0f0;
     font-family: var(--fuenteParrafos);
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2;
 }
 a{
