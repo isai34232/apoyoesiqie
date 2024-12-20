@@ -3,7 +3,7 @@
 class Database {
     private $hostname = "apoyoesiqie.blog";
     private $database = "u713759731_plataforma";
-    private $username = "root";
+    private $username = "u713759731_root";
     private $password = "NR]vOaf?7g";
     private $charset = "utf8";
 
