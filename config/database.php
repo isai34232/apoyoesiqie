@@ -1,10 +1,10 @@
 <?php
 
 class Database {
-    private $hostname = "localhost";
-    private $database = "plataforma";
+    private $hostname = "apoyoesiqie.blog";
+    private $database = "u713759731_plataforma";
     private $username = "root";
-    private $password = "";
+    private $password = "NR]vOaf?7g";
     private $charset = "utf8";
 
 
