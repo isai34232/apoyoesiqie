@@ -1,7 +1,7 @@
 <?php
 
 class Database {
-    private $hostname = "apoyoesiqie.blog";
+    private $hostname = "localhost";
     private $database = "u713759731_plataforma";
     private $username = "u713759731_root";
     private $password = "hQ7^fbucyQ?2";
