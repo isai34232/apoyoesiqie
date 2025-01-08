@@ -63,16 +63,10 @@
                 <p>Bienvenido al panel de administración para la pagina rumbo a la meta. Aquí puedes: </p>
                 <ul class="lista">
                     <li class="iconoText">
-                        - Modificar las preguntas y respuestas del test general <span class="material material-symbols-outlined">contract_edit</span>
-                    </li> 
-                    <li class="iconoText">
                         - Modificar las preguntas y respuestas del los test por materia <span class="material material-symbols-outlined">list</span>
                     </li>
                     <li class="iconoText">
                         - Actualizar el material de apoyo de los estudiantes. <span class="material material-symbols-outlined">attach_file</span></li>
-                    <li class="iconoText">
-                        - Administrar el foro de dudas.<span class="material material-symbols-outlined"> group </span></li>
-                    <li class="iconoText"></li>
                 </ul>
                 <br>
             </div>

@@ -35,7 +35,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] != 'alumno') {
 <header class="header">
     <div class="logo">
         <img src="../../src/img/IPN.png" alt="Logo de la marca">
-        <span class="title">Instituto Politécnico Nacional</span> <!-- Añadido el título -->
+        <span class="title">Instituto Politécnico Nacional</span> 
     </div>
     <nav>
         <div class="menu-toggle" onclick="toggleMenu()">Menú</div>
@@ -74,7 +74,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] != 'alumno') {
             <br>
             <p style="text-align: center;">¡Estamos aquí para apoyarte en cada paso del camino!</p>
             <br>
-            <p class="boton--zoom-a" style="text-align: center;">El Equipo de Rumbo a la Meta</p>
             <br>
         </div>
         <button class="boton--zoom" id="toggleButton"><span id="zoom" class=" material-symbols-outlined"> zoom_in_map </span></button>
