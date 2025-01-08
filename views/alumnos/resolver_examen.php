@@ -110,7 +110,7 @@ $_SESSION['numero_preguntas_seleccionadas'] = $numero_preguntas_seleccionadas;
             <ul class="nav-links" id="nav-links">
                 <li><a href="examenMateria.php">Examen por materias</a></li>
                 <li><a href="estadisticas.php">Estadísticas</a></li>
-                <li><a href="material.php">Referencias</a></li>
+                <li><a href="material.php">Material</a></li>
             </ul>
         </nav>
         <div class="btn-wrapper">
