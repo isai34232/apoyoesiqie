@@ -35,7 +35,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] != 'alumno') {
 <header class="header">
     <div class="logo">
         <img src="../../src/img/IPN.png" alt="Logo de la marca">
-        <span class="title">Instituto Politécnico Nacional</span> 
+        <span class="title">Sistema de apoyo en matemáticas y física para estudiantes</span> 
     </div>
     <nav>
         <div class="menu-toggle" onclick="toggleMenu()">Menú</div>
@@ -58,19 +58,19 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] != 'alumno') {
       <main class="content">
         <div class="contenedor">
             <h2>Bienvenid@, <?php echo htmlspecialchars($_SESSION['user_name']); ?></h2>
-            <p>Nos complace darte la bienvenida a nuestra plataforma, donde tu éxito académico es nuestra prioridad. Aquí podrás:</p>
+            <p>Nos complace darte la bienvenida a la plataforma, donde tu éxito académico es prioridad. Aquí podrás:</p>
             <ul class="lista">
                 <li class="iconoText">
-                    - Realizar Exámenes de Simulación: Practica y prepárate con nuestros exámenes simulados, tanto general como por materias ,que te ayudarán a familiarizarte con el formato y contenido real de un examen. 
+                    - Realizar exámenes de simulación: Practica y prepárate con los exámenes de simulación por materias, que te ayudara a familiarizarte con el formato y contenido real de un examen. 
                 </li> 
                 <li class="iconoText">
-                    - Consultar Referencias: Accede a una amplia variedad de recursos y materiales de estudio que te ayudarán a profundizar en tus conocimientos y resolver tus dudas.
+                    - Consultar referencias: Accede a una amplia variedad de recursos y materiales de estudio que te ayudarán a profundizar en tus conocimientos y resolver tus dudas.
                 </li>
                 <li class="iconoText">
-                    - Explora las estadisticas por materia para que puedas mejorar en las cuales vas mal y te pueden perjudicar.
+                    - Explora tu nivel por materia para saber el nivel de conocimiento en cada una. 
                 </li>
             </ul>
-            <p>Explora todas las herramientas y recursos que hemos preparado para ti, y comienza tu viaje hacia el éxito académico con confianza.</p>
+            <p>Navega en las herramientas y recursos que hemos preparado para ti, y comienza tu experiencia hacia el éxito académico.</p>
             <br>
             <p style="text-align: center;">¡Estamos aquí para apoyarte en cada paso del camino!</p>
             <br>

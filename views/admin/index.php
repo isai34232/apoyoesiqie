@@ -39,7 +39,7 @@
                 <a href="index.php">
                     <img src="../../src/img/IPN.png" alt="Logo de la marca"/>
                 </a>
-                <span class="title">Instituto Politécnico Nacional</span> <!-- Añadido el título -->
+                <span class="title">Sistema de apoyo en matemáticas y física para estudiantes</span> <!-- Añadido el título -->
             </div>
             <nav>
                 <div class="menu-toggle" onclick="toggleMenu()">Menú</div>
