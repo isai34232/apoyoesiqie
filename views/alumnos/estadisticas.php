@@ -141,7 +141,6 @@ $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php }?>
           </ol>
           <br>
-          <button class="boton--zoom" id="toggleButton"><span id="zoom" class=" material-symbols-outlined"> zoom_in_map </span></button>
         </div>
       </main>
     </div>

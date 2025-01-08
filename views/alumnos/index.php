@@ -76,7 +76,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] != 'alumno') {
             <br>
             <br>
         </div>
-        <button class="boton--zoom" id="toggleButton"><span id="zoom" class=" material-symbols-outlined"> zoom_in_map </span></button>
       </main>
     </div>
     <!-- internos -->

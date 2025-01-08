@@ -227,7 +227,6 @@ $totalPaginas = ceil($totalMateriales / $materialesPorPagina);
                   </div>
               </div> <!-- cierre tabla -->
           <?php endif; ?>
-          <button class="boton--zoom" id="toggleButton"><span id="zoom" class=" material-symbols-outlined"> zoom_in_map </span></button>
     <br>
     <br>
     </div>

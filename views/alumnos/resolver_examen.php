@@ -219,7 +219,6 @@ $_SESSION['numero_preguntas_seleccionadas'] = $numero_preguntas_seleccionadas;
         <?php endif; } ?>
         <br>
         <br>
-            <button class="boton--zoom" id="toggleButton"><span id="zoom" class=" material-symbols-outlined"> zoom_in_map </span></button>
         </div>
     </main>
     <!-- internos -->

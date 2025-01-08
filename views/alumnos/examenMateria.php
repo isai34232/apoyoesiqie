@@ -70,7 +70,7 @@ $result = $con->query($query);
         <div class="contenedor">
         <h2 class="test-general__titulo">Seleccionar materia</h2>
         <p class="test-general__instrucciones">
-            Por favor, selecciona una de las materias disponibles a continuación para iniciar tu examen. Haz clic en el icono de la materia que deseas seleccionar y luego presiona el botón "Enviar" para comenzar. Puedes utilizar el botón de zoom para acercar o alejar la vista de la selección de materias.
+            Por favor, selecciona una de las materias disponibles a continuación para iniciar tu examen. Haz clic en el icono de la materia que deseas seleccionar y luego presiona el botón "Enviar" para comenzar.
         </p>
 
         <form class="test-general__formulario" method="POST" action="resolver_examen.php" id="materias-form">
@@ -92,7 +92,6 @@ $result = $con->query($query);
         <br>
         <br>
     </form>
-            <button class="boton--zoom" id="toggleButton"><span id="zoom" class=" material-symbols-outlined"> zoom_in_map </span></button>
         </div>
       </main>
     </div>
