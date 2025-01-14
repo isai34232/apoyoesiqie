@@ -199,7 +199,7 @@ $totalPaginas = ceil($totalMateriales / $materialesPorPagina);
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </a>
                               </div>
-                              <div class="row__material">hola</div>
+                              <div class="row__material"><?php echo $material['referencia']; ?></div>
                           </div>
                       <?php endforeach; ?>
                   </div>
