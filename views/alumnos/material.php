@@ -171,6 +171,7 @@ $totalPaginas = ceil($totalMateriales / $materialesPorPagina);
                           <div><p>Titulo</p></div>
                           <div><p>Tipo</p></div>
                           <div><p>Ver más</p></div>
+                          <div><p>Referencias</p></div>
                       </div>
                   </div>
                   
@@ -197,7 +198,8 @@ $totalPaginas = ceil($totalMateriales / $materialesPorPagina);
                                 <a href="#" class="ver-mas" data-id="<?php echo $material['id']; ?>">
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </a>
-                            </div>
+                              </div>
+                              <div></div>
                           </div>
                       <?php endforeach; ?>
                   </div>
